@@ -17,6 +17,6 @@ class ExecCommand(exe.ExecCommand):
             self.window.focus_view(self.output_view)
 
             if hasattr(self, 'proc'):
-                exe.ExecCommand.append_data(self, self.proc, "data\n")
+                exe.ExecCommand.append_data(self, self.proc, "\n\n\n")
 
         exe.ExecCommand.run(self, cmd, file_regex, line_regex, working_dir, encoding, env, quiet, kill , **kwargs)
